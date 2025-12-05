@@ -17,7 +17,7 @@ YOLO is used for **real-time object detection**, while CNN model classifies the 
 
 ## 🧠 Project Architecture
 
-Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Result (with Audiio Bizzer)
+Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Result (with Audio Bizzer)
 
 ---
 
