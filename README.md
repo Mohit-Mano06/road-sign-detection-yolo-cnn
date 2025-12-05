@@ -1,7 +1,7 @@
 # Road Sign Detection – YOLO + CNN Hybrid Model
 
 This project implements a hybrid **YOLO + CNN based traffic sign detection system**.  
-YOLO is used for **real-time object detection**, while a custom CNN model classifies the cropped sign into its appropriate category.
+YOLO is used for **real-time object detection**, while CNN model classifies the road sign into its appropriate category.
 
 ---
 
@@ -11,7 +11,7 @@ YOLO is used for **real-time object detection**, while a custom CNN model classi
 - End-to-end hybrid pipeline:  
   YOLO → Crop Sign → CNN → Predicted Label  
 - Streamlit web app for demo  
-- Trained on custom traffic-sign dataset
+- Trained on custom traffic-sign dataset **from Roboflow**
 
 ---
 
