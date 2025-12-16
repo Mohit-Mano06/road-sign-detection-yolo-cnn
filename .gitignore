@@ -1,0 +1,13 @@
+# YOLO
+yolo/runs/
+
+# CNN dataset (if large)
+cnn/data/images_custom/
+
+# Model weights
+*.pt
+*.keras
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
