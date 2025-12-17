@@ -22,4 +22,3 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
 ---
 
 ## 📂 Folder Structure
-
