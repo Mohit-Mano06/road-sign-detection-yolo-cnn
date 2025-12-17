@@ -174,7 +174,7 @@ def process_image(uploaded_file):
     yolo_image = image.copy()
 
     if len(boxes) > 0:
-        pygame.mixer.music.load(r"C:\Users\delta\OneDrive\Desktop\YOLO CNN\Minor_Project_Code\Implementation\Audio_file\Double_beep.wav")
+        pygame.mixer.music.load(r"C:\Users\delta\OneDrive\Desktop\Github\road-sign-detection-yolo-cnn\Audio_file\Double_beep.wav")
         pygame.mixer.music.play()
 
         for box, conf, class_id in boxes:
