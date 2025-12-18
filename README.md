@@ -24,15 +24,26 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
 ## How to run the Application 
 
 - Clone the repository or download ZIP
+``` bash
+  git clone https://github.com/your-username/road-sign-detection.git
+```
+
 - Navigate to the app folder 
+```bash
+  cd road-sign-detection/app
+```
+
 - Install the dependencies using
 ```bash
   pip install -r requirements-app.txt
 ```
+
 - In modern_interface.py file , replace the path of the CNN & YOLO [Line 28 & 29], Data.yaml & CNN csv file [Line 41 & 42] and Audio Beep wav (Line 177)
+
 - Run Streamlit App 
 ```bash
   streamlit run modern_interface.py
 ```
+
 
 ## 📂 Folder Structure
