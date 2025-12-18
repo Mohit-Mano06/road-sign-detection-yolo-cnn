@@ -21,7 +21,7 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
 
 ---
 
-## How to run the Application 
+## ▶️ How to Run the Application
 
 - Clone the repository or download ZIP
 ``` bash
