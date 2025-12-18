@@ -1,0 +1,30 @@
+streamlit
+
+# Core
+numpy
+pandas
+opencv-python
+pyyaml
+Pillow
+
+# YOLO
+ultralytics
+torch
+
+# CNN
+tensorflow
+keras
+
+# Audio
+pygame
+
+# Ensemble & ML
+scikit-learn
+xgboost
+
+# Visualization
+plotly
+seaborn
+
+# Utilities
+matplotlib

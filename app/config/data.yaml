@@ -1,0 +1,38 @@
+names:
+- Compulsory Left
+- Compulsory Right
+- Gap in Median
+- Give way
+- Horn Prohibited
+- Hump Ahead
+- Left Hand Curve
+- Left Turn Prohibited
+- Level Crossing
+- No Entry
+- No Parking
+- No Stopping or Parking
+- Pedestrian Crossing
+- Right Turn Prohibited
+- Right reverse bend
+- Roundabout
+- School Ahead
+- Side Road Right
+- Speed Limit 100
+- Speed Limit 30
+- Speed Limit 50
+- Stop
+- Turn Left
+- Turn Right
+- U Turn Ahead
+- U Turn Prohibited
+- cross road
+nc: 27
+roboflow:
+  license: CC BY 4.0
+  project: road-sign-detection-1hjrr
+  url: https://universe.roboflow.com/traffic-sign-detection-yolo/road-sign-detection-1hjrr/dataset/10
+  version: 10
+  workspace: traffic-sign-detection-yolo
+test: C:\Users\delta\OneDrive\Desktop\Minor_Project_Code\yolo_roboflow\Road-Sign-detection-10\test
+train: C:\Users\delta\OneDrive\Desktop\Minor_Project_Code\yolo_roboflow\Road-Sign-detection-10\train
+val: C:\Users\delta\OneDrive\Desktop\Minor_Project_Code\yolo_roboflow\Road-Sign-detection-10\valid
