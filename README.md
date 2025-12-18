@@ -27,5 +27,9 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
 - Navigate to the app folder 
 - Install the dependencies using "pip install -r reuqirements-app.txt"
 - In modern_interface.py file , replace the path of the CNN & YOLO [Line 28 & 29], Data.yaml & CNN csv file [Line 41 & 42] and Audio Beep wav (Line 177)
+- Run Streamlit App 
+```bash
+  streamlit run modern_interface.py
+```
 
 ## 📂 Folder Structure
