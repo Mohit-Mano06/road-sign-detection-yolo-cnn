@@ -12,6 +12,7 @@ YOLO is used for **real-time object detection**, while CNN model classifies the 
   YOLO → Crop Sign → CNN → Predicted Label  
 - Streamlit web app for demo  
 - Trained on custom traffic-sign dataset **from Roboflow**
+- Added Docker for easy setup and execution without manual dependency installation
 
 ---
 
@@ -21,7 +22,12 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
 
 ---
 
+## Prerequisites 
+
+- Docker to be installed on your system
+
 ## ▶️ How to Run the Application
+
 
 - Clone the repository or download ZIP
 ``` bash
@@ -33,17 +39,23 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
   cd road-sign-detection/app
 ```
 
-- Install the dependencies using
+- Run Docker command to build the image
 ```bash
-  pip install -r requirements-app.txt
+  docker build -t road-sign-streamlit .
+  docker run -p 8501:8501 road-sign-streamlit
 ```
 
-- In modern_interface.py file , replace the path of the CNN & YOLO [Line 28 & 29], Data.yaml & CNN csv file [Line 41 & 42] and Audio Beep wav (Line 177)
+- Once container is up and running
 
-- Run Streamlit App 
-```bash
-  streamlit run modern_interface.py
-```
+- Open browser and visit [text](http://localhost:8501)
 
 
-## 📂 Folder Structure
+## Notes
+
+- The Docker container includes only the Streamlit inference application.
+
+- Model files, configuration files, and assets required for inference are packaged inside the container.
+
+- Training code and datasets are intentionally excluded to keep the container lightweight.
+
+- Docker eliminates environment and dependency conflicts across systems.
