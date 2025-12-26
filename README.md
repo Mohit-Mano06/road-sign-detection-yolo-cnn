@@ -47,7 +47,7 @@ Camera -> YOLO Detection -> Bounding Box -> CNN Classification -> Output Sign/Re
 
 - Once container is up and running
 
-- Open browser and visit [text](http://localhost:8501)
+- Open browser and visit [http://localhost:8501](http://localhost:8501)
 
 
 ## Notes
