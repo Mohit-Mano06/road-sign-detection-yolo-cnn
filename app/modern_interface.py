@@ -24,9 +24,16 @@ import plotly.graph_objects as go
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
+yolo_path = BASE_DIR/"models"/"best.pt"
+cnn_path = BASE_DIR/"models"/"cnn_model_custom_2.keras"
+
 # Load models and configurations
-yolo_model = YOLO(r'C:\Users\delta\OneDrive\Desktop\Github\road-sign-detection-yolo-cnn\app\models\best.pt') ## download best.pt from weights\train folder and copy path
-cnn_model_instance = load_model(r'C:\Users\delta\OneDrive\Desktop\Github\road-sign-detection-yolo-cnn\app\models\cnn_model_custom_2.keras') ## download cnn_model_custom_2.keras and copy path
+yolo_model = YOLO(yolo_path) 
+cnn_model_instance = load_model(cnn_path) 
 
 # Load class names
 def load_yolo_class_names(yaml_file):
@@ -38,9 +45,10 @@ def load_cnn_class_names(csv_file):
     df = pd.read_csv(csv_file)
     return dict(zip(df['ClassId'], df['Name']))
 
-yolo_class_names = load_yolo_class_names(r'C:\Users\delta\OneDrive\Desktop\Github\road-sign-detection-yolo-cnn\app\config\data.yaml') ## download data.yaml file from yolo\data and copy path
-cnn_class_names = load_cnn_class_names(r'C:\Users\delta\OneDrive\Desktop\Github\road-sign-detection-yolo-cnn\app\config\traffic_sign_custom.csv') ## download trafficsigncustom csv from cnn\data and copy path
-
+yolo_yaml_path = BASE_DIR/"config"/"data.yaml"
+cnn_csv_path = BASE_DIR/"config"/"traffic_sign_custom.csv"
+yolo_class_names = load_yolo_class_names(yolo_yaml_path)
+cnn_class_names = load_cnn_class_names(cnn_csv_path)
 # Initialize pygame
 pygame.mixer.init()
 
