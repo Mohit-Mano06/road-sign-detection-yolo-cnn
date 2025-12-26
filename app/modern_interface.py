@@ -28,6 +28,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 
+audio_path = BASE_DIR/"assets"/"double_beep.wav"
 yolo_path = BASE_DIR/"models"/"best.pt"
 cnn_path = BASE_DIR/"models"/"cnn_model_custom_2.keras"
 
@@ -182,7 +183,7 @@ def process_image(uploaded_file):
     yolo_image = image.copy()
 
     if len(boxes) > 0:
-        pygame.mixer.music.load(r"C:\Users\delta\OneDrive\Desktop\Github\road-sign-detection-yolo-cnn\app\assets\Double_beep.wav")
+        pygame.mixer.music.load(audio_path)
         pygame.mixer.music.play()
 
         for box, conf, class_id in boxes:
