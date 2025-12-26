@@ -3,7 +3,7 @@ streamlit
 # Core
 numpy
 pandas
-opencv-python-headless
+opencv-python
 pyyaml
 Pillow
 
