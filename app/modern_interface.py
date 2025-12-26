@@ -51,8 +51,12 @@ cnn_csv_path = BASE_DIR/"config"/"traffic_sign_custom.csv"
 yolo_class_names = load_yolo_class_names(yolo_yaml_path)
 cnn_class_names = load_cnn_class_names(cnn_csv_path)
 # Initialize pygame
-pygame.mixer.init()
+AUDIO_ENABLED = True
 
+try:
+    pygame.mixer.init()
+except pygame.error:
+    AUDIO_ENABLED = False
 # Add these to your configuration
 CONFIDENCE_THRESHOLD = 0.95
 MIN_SIGN_SIZE = 32  # Minimum size in pixels
